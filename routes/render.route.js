@@ -9,5 +9,6 @@ router.get("/appointment", renderController.renderAppointment);
 router.get("/about", renderController.renderAbout);
 router.get("/service", renderController.renderService);
 router.get("/contact", renderController.renderContact);
+router.get("/testeimonial", renderController.renderTetstimonial);
 
 module.exports = router;

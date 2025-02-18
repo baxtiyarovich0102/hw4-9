@@ -37,6 +37,11 @@ let renderContact = (req, res, next) => {
     title: "Aloqalarimiz",
   });
 };
+let renderTetstimonial = (req, res, next) => {
+  res.render("testimonial", {
+    title: "Sharh",
+  });
+};
 
 module.exports = {
   renderIndex,
@@ -45,5 +50,6 @@ module.exports = {
   renderContact,
   renderFeature,
   renderTeam,
-  renderAppointment
+  renderAppointment,
+  renderTetstimonial
 };
