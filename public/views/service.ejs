@@ -110,11 +110,11 @@
       data-wow-delay="0.1s"
     >
       <a
-        href="index.html"
+        href="index"
         class="navbar-brand d-flex align-items-center px-4 px-lg-5"
       >
         <h1 class="m-0 text-primary">
-          <i class="far fa-hospital me-3"></i>Klinik
+          <i class="far fa-hospital me-3"></i>Shaxsiy klinika
         </h1>
       </a>
       <button
@@ -127,30 +127,30 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link active">Service</a>
+          <a href="index" class="nav-item nav-link">Bosh sahifa</a>
+          <a href="about" class="nav-item nav-link">Biz haqimizda</a>
+          <a href="service" class="nav-item nav-link active"><%= title%></a>
           <div class="nav-item dropdown">
             <a
               href="#"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >Pages</a
+              >Sahifalar</a
             >
             <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="feature.html" class="dropdown-item">Feature</a>
-              <a href="team.html" class="dropdown-item">Our Doctor</a>
-              <a href="appointment.html" class="dropdown-item">Appointment</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
+              <a href="feature" class="dropdown-item">Imkoniyatlar</a>
+              <a href="team" class="dropdown-item">Xodimlar</a>
+              <a href="appointment" class="dropdown-item">Rejalashtirish</a>
+              <a href="testimonial" class="dropdown-item">Sharh</a>
+              <a href="404" class="dropdown-item">404 sahifa</a>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="contact" class="nav-item nav-link">Aloqa</a>
         </div>
         <a
           href=""
           class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-          >Appointment<i class="fa fa-arrow-right ms-3"></i
+          >Rejalashtirish<i class="fa fa-arrow-right ms-3"></i
         ></a>
       </div>
     </nav>
@@ -162,17 +162,19 @@
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+        <h1 class="display-3 text-white mb-3 animated slideInDown">
+          <%=title%>
+        </h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb text-uppercase mb-0">
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Home</a>
+              <a class="text-white" href="#">Bosh sahifa</a>
             </li>
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Pages</a>
+              <a class="text-white" href="#">Sahifalar</a>
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Services
+              <%=title %>
             </li>
           </ol>
         </nav>
@@ -188,8 +190,10 @@
           data-wow-delay="0.1s"
           style="max-width: 600px"
         >
-          <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
-          <h1>Health Care Solutions</h1>
+          <p class="d-inline-block border rounded-pill py-1 px-4">
+            <%=title %>
+          </p>
+          <h1>Sog‘liqni saqlash yechimlari</h1>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -200,13 +204,13 @@
               >
                 <i class="fa fa-heartbeat text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Cardiology</h4>
+              <h4 class="mb-3">Kardiologiya</h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                 sed diam stet diam sed stet.
               </p>
               <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Read More</a
+                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
@@ -218,13 +222,13 @@
               >
                 <i class="fa fa-x-ray text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Pulmonary</h4>
+              <h4 class="mb-3">Pulmonologik</h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                 sed diam stet diam sed stet.
               </p>
               <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Read More</a
+                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
@@ -236,13 +240,13 @@
               >
                 <i class="fa fa-brain text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Neurology</h4>
+              <h4 class="mb-3">Nevrologiya</h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                 sed diam stet diam sed stet.
               </p>
               <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Read More</a
+                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
@@ -254,13 +258,13 @@
               >
                 <i class="fa fa-wheelchair text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Orthopedics</h4>
+              <h4 class="mb-3">Ortopediya</h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                 sed diam stet diam sed stet.
               </p>
               <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Read More</a
+                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
@@ -272,13 +276,13 @@
               >
                 <i class="fa fa-tooth text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Dental Surgery</h4>
+              <h4 class="mb-3">Stomatologik jarrohlik</h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                 sed diam stet diam sed stet.
               </p>
               <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Read More</a
+                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
@@ -290,13 +294,13 @@
               >
                 <i class="fa fa-vials text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Laboratory</h4>
+              <h4 class="mb-3">Laboratoriya</h4>
               <p class="mb-4">
                 Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                 sed diam stet diam sed stet.
               </p>
               <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Read More</a
+                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
@@ -311,9 +315,11 @@
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <p class="d-inline-block border rounded-pill py-1 px-4">
-              Appointment
+              Uchrashuv
             </p>
-            <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
+            <h1 class="mb-4">
+              Bizning shifokorimizga tashrif buyurish uchun uchrashuv belgilang
+            </h1>
             <p class="mb-4">
               Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
               diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
@@ -327,7 +333,7 @@
                 <i class="fa fa-phone-alt text-primary"></i>
               </div>
               <div class="ms-4">
-                <p class="mb-2">Call Us Now</p>
+                <p class="mb-2">Bizga hoziroq qo‘ng‘iroq qiling</p>
                 <h5 class="mb-0">+012 345 6789</h5>
               </div>
             </div>
@@ -339,7 +345,7 @@
                 <i class="fa fa-envelope-open text-primary"></i>
               </div>
               <div class="ms-4">
-                <p class="mb-2">Mail Us Now</p>
+                <p class="mb-2">Hozir bizga email yuboring</p>
                 <h5 class="mb-0">info@example.com</h5>
               </div>
             </div>
@@ -350,9 +356,9 @@
                 <div class="row g-3">
                   <div class="col-12 col-sm-6">
                     <input
-                      type="text"
+                      type="Xabar"
                       class="form-control border-0"
-                      placeholder="Your Name"
+                      placeholder="Sizning ismingiz"
                       style="height: 55px"
                     />
                   </div>
@@ -360,7 +366,7 @@
                     <input
                       type="email"
                       class="form-control border-0"
-                      placeholder="Your Email"
+                      placeholder="Sizning emailingiz"
                       style="height: 55px"
                     />
                   </div>
@@ -368,13 +374,13 @@
                     <input
                       type="text"
                       class="form-control border-0"
-                      placeholder="Your Mobile"
+                      placeholder="Sizning raqamingiz"
                       style="height: 55px"
                     />
                   </div>
                   <div class="col-12 col-sm-6">
                     <select class="form-select border-0" style="height: 55px">
-                      <option selected>Choose Doctor</option>
+                      <option selected>Shifokorni tanlang</option>
                       <option value="1">Doctor 1</option>
                       <option value="2">Doctor 2</option>
                       <option value="3">Doctor 3</option>
@@ -385,7 +391,7 @@
                       <input
                         type="text"
                         class="form-control border-0 datetimepicker-input"
-                        placeholder="Choose Date"
+                        placeholder="Kunni tanlang"
                         data-target="#date"
                         data-toggle="datetimepicker"
                         style="height: 55px"
@@ -397,7 +403,7 @@
                       <input
                         type="text"
                         class="form-control border-0 datetimepicker-input"
-                        placeholder="Choose Date"
+                        placeholder="Vaqtni tanlang"
                         data-target="#time"
                         data-toggle="datetimepicker"
                         style="height: 55px"
@@ -408,12 +414,12 @@
                     <textarea
                       class="form-control border-0"
                       rows="5"
-                      placeholder="Describe your problem"
+                      placeholder="Muammolarni yozish"
                     ></textarea>
                   </div>
                   <div class="col-12">
                     <button class="btn btn-primary w-100 py-3" type="submit">
-                      Book Appointment
+                      Uchrashuvni belgilash
                     </button>
                   </div>
                 </div>
@@ -434,9 +440,9 @@
           style="max-width: 600px"
         >
           <p class="d-inline-block border rounded-pill py-1 px-4">
-            Testimonial
+            Fikr-mulohaza
           </p>
-          <h1>What Say Our Patients!</h1>
+          <h1>Bemorlarimiz nima deydi!</h1>
         </div>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
@@ -455,8 +461,8 @@
                 clita erat magna elitr erat sit sit erat at rebum justo sea
                 clita.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class="mb-1">Zilola Zokirova</h5>
+              <span class="fst-italic">Professor</span>
             </div>
           </div>
           <div class="testimonial-item text-center">
@@ -472,8 +478,8 @@
                 clita erat magna elitr erat sit sit erat at rebum justo sea
                 clita.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class="mb-1">Xurshid Abduraxmonov</h5>
+              <span class="fst-italic">Professor</span>
             </div>
           </div>
           <div class="testimonial-item text-center">
@@ -489,8 +495,8 @@
                 clita erat magna elitr erat sit sit erat at rebum justo sea
                 clita.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class="mb-1">Qodir Tolipov</h5>
+              <span class="fst-italic">Professor</span>
             </div>
           </div>
         </div>
@@ -532,7 +538,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Services</h5>
+            <h5 class="text-light mb-4"><%=title %></h5>
             <a class="btn btn-link" href="">Cardiology</a>
             <a class="btn btn-link" href="">Pulmonary</a>
             <a class="btn btn-link" href="">Neurology</a>
@@ -540,15 +546,15 @@
             <a class="btn btn-link" href="">Laboratory</a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <h5 class="text-light mb-4">Tezkor havolalar</h5>
+            <a class="btn btn-link" href="about">Biz haqimizda</a>
+            <a class="btn btn-link" href="contact">Aloqalar</a>
+            <a class="btn btn-link" href="service"><%= title%></a>
+            <a class="btn btn-link" href=""> Shartlar va qoidalar</a>
+            <a class="btn btn-link" href="">Qo‘llab-quvvatlash</a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
+            <h5 class="text-light mb-4">Axborot xati</h5>
             <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
             <div class="position-relative mx-auto" style="max-width: 400px">
               <input
@@ -560,7 +566,7 @@
                 type="button"
                 class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
               >
-                SignUp
+                Ro'yxatdan o'tish
               </button>
             </div>
           </div>
