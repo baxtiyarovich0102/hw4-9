@@ -14,6 +14,11 @@ let renderTeam = (req, res, next) => {
       title: "Xodimlar"
     });
   };
+let renderAppointment = (req, res, next) => {
+    res.render("appointment", {
+      title: "Rejalashtirish"
+    });
+  };
 
 
 
@@ -21,5 +26,6 @@ let renderTeam = (req, res, next) => {
 module.exports= {
     renderIndex,
     renderFeature,
-    renderTeam
+    renderTeam,
+    renderAppointment
 }
