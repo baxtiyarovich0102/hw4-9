@@ -9,11 +9,17 @@ let renderFeature = (req, res, next) => {
       title: "Imkoniyat"
     });
   };
+let renderTeam = (req, res, next) => {
+    res.render("team", {
+      title: "Xodimlar"
+    });
+  };
 
 
 
 
 module.exports= {
     renderIndex,
-    renderFeature
+    renderFeature,
+    renderTeam
 }
