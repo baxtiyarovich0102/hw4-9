@@ -6,6 +6,8 @@ router.get("/index", renderController.renderIndex);
 router.get("/feature", renderController.renderFeature);
 router.get("/team", renderController.renderTeam);
 router.get("/appointment", renderController.renderAppointment);
+router.get("/about", renderController.renderAbout);
+router.get("/service", renderController.renderService);
+router.get("/contact", renderController.renderContact);
 
-
-module.exports = router
+module.exports = router;
