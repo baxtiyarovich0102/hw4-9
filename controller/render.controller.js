@@ -42,6 +42,11 @@ let renderTetstimonial = (req, res, next) => {
     title: "Sharh",
   });
 };
+let renderError = (req, res, next) => {
+  res.render("404", {
+    title: "Xatolik",
+  });
+};
 
 module.exports = {
   renderIndex,
@@ -51,5 +56,6 @@ module.exports = {
   renderFeature,
   renderTeam,
   renderAppointment,
-  renderTetstimonial
+  renderTetstimonial,
+  renderError
 };
