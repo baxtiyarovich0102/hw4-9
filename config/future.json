@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "titl": "Tajriba",
+    "json1": "Shifokorlar",
+    "icon": "fa-user-md"
+  },
+  {
+    "id": "2",
+    "titl": "Ijobiy",
+    "json1": "Maslahat",
+    "icon": "fa-check"
+  },
+  {
+    "id": "3",
+    "titl": "Sifat",
+    "json1": "Xizmatlar",
+    "icon": "fa-comment-medical"
+  },
+  {
+    "id": "4",
+    "titl": "24 soat",
+    "json1": "Qo‘llab-quvvatlash",
+    "icon": "fa-headphones"
+  }
+]
