@@ -161,24 +161,22 @@
             Yaxshi sog‘liq – barcha baxtning ildizidir.
           </h1>
           <div class="row g-4">
-            <div class="col-sm-4">
-              <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">123</h2>
-                <p class="text-light mb-0">Ekspert xodimlar</p>
+            <%for(i=0; i< future.length; i++ ){%>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                  style="width: 55px; height: 55px"
+                >
+                  <i class="fa <%= future[i].icon %> text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <p class="text-white mb-2"><%= future[i].titl %></p>
+                  <h5 class="text-white mb-0"><%= future[i].json1 %></h5>
+                </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">1234</h2>
-                <p class="text-light mb-0">Tibbiyot xodimlari</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="border-start border-light ps-4">
-                <h2 class="text-white mb-1" data-toggle="counter-up">12345</h2>
-                <p class="text-light mb-0">Bemorlar soni</p>
-              </div>
-            </div>
+            <%}%>
           </div>
         </div>
         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">

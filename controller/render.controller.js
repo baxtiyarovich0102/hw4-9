@@ -6,8 +6,10 @@ let services = getData("service");
 let testimonials = getData("testimonial");
 
 let renderIndex = (req, res, next) => {
+  const future = AboutService.getAllFuture();
   console.log(testimonials);
   res.render("index", {
+    future,
     service: services,
     tests: testimonials,
     title: "Xususiy klinika",
