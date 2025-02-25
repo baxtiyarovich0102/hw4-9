@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Klinik - Clinic Website Template</title>
+    <title>Xususiy klinika</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -75,7 +75,7 @@
         <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+012 345 6789</small>
+            <small>+886769194</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center">
             <a
@@ -114,7 +114,7 @@
         class="navbar-brand d-flex align-items-center px-4 px-lg-5"
       >
         <h1 class="m-0 text-primary">
-          <i class="far fa-hospital me-3"></i>Shaxsiy klinika
+          <i class="far fa-hospital me-3"></i>Xususiy klinika
         </h1>
       </a>
       <button
@@ -148,7 +148,7 @@
           <a href="contact" class="nav-item nav-link">Aloqa</a>
         </div>
         <a
-          href=""
+          href="/appointment"
           class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
           >Rejalashtirish<i class="fa fa-arrow-right ms-3"></i
         ></a>
@@ -168,7 +168,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb text-uppercase mb-0">
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Bosh sahifa</a>
+              <a class="text-white" href="/">Bosh sahifa</a>
             </li>
             <li class="breadcrumb-item">
               <a class="text-white" href="#">Sahifalar</a>
@@ -196,114 +196,24 @@
           <h1>Sog‘liqni saqlash yechimlari</h1>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-heartbeat text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">Kardiologiya</h4>
-              <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
-              </p>
-              <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-x-ray text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">Pulmonologik</h4>
-              <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
-              </p>
-              <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
-              >
-            </div>
-          </div>
+          <%for(let i = 0; i<=service.length - 1;i++) {%>
+
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="service-item bg-light rounded h-100 p-5">
               <div
                 class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
                 style="width: 65px; height: 65px"
               >
-                <i class="fa fa-brain text-primary fs-4"></i>
+                <i class="fa <%= service[i].icon %> text-primary fs-4"></i>
               </div>
-              <h4 class="mb-3">Nevrologiya</h4>
-              <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
-              </p>
+              <h4 class="mb-3"><%= service[i].name %></h4>
+              <p class="mb-4"><%= service[i].txt %></p>
               <a class="btn" href=""
                 ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
               >
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-wheelchair text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">Ortopediya</h4>
-              <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
-              </p>
-              <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-tooth text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">Stomatologik jarrohlik</h4>
-              <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
-              </p>
-              <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-light rounded h-100 p-5">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                style="width: 65px; height: 65px"
-              >
-                <i class="fa fa-vials text-primary fs-4"></i>
-              </div>
-              <h4 class="mb-3">Laboratoriya</h4>
-              <p class="mb-4">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
-              </p>
-              <a class="btn" href=""
-                ><i class="fa fa-plus text-primary me-3"></i>Batafsil</a
-              >
-            </div>
-          </div>
+          <%}%>
         </div>
       </div>
     </div>
@@ -448,57 +358,20 @@
           class="owl-carousel testimonial-carousel wow fadeInUp"
           data-wow-delay="0.1s"
         >
+          <%for(let i = 0; i<=tests.length - 1;i++) {%>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-              src="img/testimonial-1.jpg"
+              src="img/<%= tests[i].image %>"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Zilola Zokirova</h5>
-              <span class="fst-italic">Professor</span>
+              <p><%= tests[i].txt%></p>
+              <h5 class="mb-1"><%= tests[i].name%></h5>
+              <span class="fst-italic"><%= tests[i].job%></span>
             </div>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Xurshid Abduraxmonov</h5>
-              <span class="fst-italic">Professor</span>
-            </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-              src="img/testimonial-3.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Qodir Tolipov</h5>
-              <span class="fst-italic">Professor</span>
-            </div>
-          </div>
+          <%}%>
         </div>
       </div>
     </div>

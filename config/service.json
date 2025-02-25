@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"Kardiologiya",
+        "txt":"Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet",
+        "icon":"fa-heartbeat"
+    },
+    {
+        "id":2,
+        "name":"Pulmonologik",
+        "txt":"Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet",
+        "icon":"fa-x-ray"
+    },
+    {
+        "id":3,
+        "name":"Nevrologiya",
+        "txt":"Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet",
+        "icon":"fa-brain"
+    },
+    {
+        "id":4,
+        "name":"Ortopediya",
+        "txt":"Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet",
+        "icon":"fa-wheelchair"
+    },
+    {
+        "id":5,
+        "name":"Stomatologik jarrohlik",
+        "txt":"Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet",
+        "icon":"fa-tooth"
+    },
+    {
+        "id":6,
+        "name":"Laboratoriya",
+        "txt":"Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet",
+        "icon":"fa-vials"
+    }
+]

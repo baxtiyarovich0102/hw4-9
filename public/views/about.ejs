@@ -114,7 +114,7 @@
         class="navbar-brand d-flex align-items-center px-4 px-lg-5"
       >
         <h1 class="m-0 text-primary">
-          <i class="far fa-hospital me-3"></i>Shaxsiy klinika
+          <i class="far fa-hospital me-3"></i>Xususiy klinika
         </h1>
       </a>
       <button
@@ -148,9 +148,9 @@
           <a href="contact" class="nav-item nav-link">Aloqa</a>
         </div>
         <a
-          href=""
+          href="/"
           class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-          >Uchrashuv <i class="fa fa-arrow-right ms-3"></i
+          >Rejalashtirish <i class="fa fa-arrow-right ms-3"></i
         ></a>
       </div>
     </nav>
@@ -174,14 +174,13 @@
               <a class="text-white" href="#">Sahifalar</a>
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Biz haqimizda
+              <%= title%>
             </li>
           </ol>
         </nav>
       </div>
     </div>
     <!-- Page Header End -->
-
     <!-- About Start -->
     <div class="container-xxl py-5">
       <div class="container">
@@ -260,62 +259,22 @@
                 sed stet lorem sit clita duo justo erat amet
               </p>
               <div class="row g-4">
+                <%for(i=0; i< future.length; i++ ){%>
                 <div class="col-6">
                   <div class="d-flex align-items-center">
                     <div
                       class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                       style="width: 55px; height: 55px"
                     >
-                      <i class="fa fa-user-md text-primary"></i>
+                      <i class="fa <%= future[i].icon %> text-primary"></i>
                     </div>
                     <div class="ms-4">
-                      <p class="text-white mb-2">Tajriba</p>
-                      <h5 class="text-white mb-0">Shifokorlar</h5>
+                      <p class="text-white mb-2"><%= future[i].titl %></p>
+                      <h5 class="text-white mb-0"><%= future[i].json1 %></h5>
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                      style="width: 55px; height: 55px"
-                    >
-                      <i class="fa fa-check text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="text-white mb-2">Sifat</p>
-                      <h5 class="text-white mb-0">Xizmatlar</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                      style="width: 55px; height: 55px"
-                    >
-                      <i class="fa fa-comment-medical text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="text-white mb-2">Ijobiy</p>
-                      <h5 class="text-white mb-0">Maslahat</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
-                      style="width: 55px; height: 55px"
-                    >
-                      <i class="fa fa-headphones text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="text-white mb-2">24 soat</p>
-                      <h5 class="text-white mb-0">Qo‘llab-quvvatlash</h5>
-                    </div>
-                  </div>
-                </div>
+                <%}%>
               </div>
             </div>
           </div>
@@ -327,7 +286,7 @@
             <div class="position-relative h-100">
               <img
                 class="position-absolute img-fluid w-100 h-100"
-                src="img/feature.jpg"
+                src="img/<%= image %>"
                 style="object-fit: cover"
                 alt=""
               />
@@ -352,80 +311,15 @@
           <h1>Bizning tajribali shifokorlarimiz</h1>
         </div>
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-1.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Zilola</h5>
-                <p class="text-primary">Hamshira</p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-2.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Alisher</h5>
-                <p class="text-primary">Shifokor</p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-3.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Nargiza</h5>
-                <p class="text-primary">Hamshira</p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <% for(i=0; i<jobs.length; i++){%>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
             <div class="team-item position-relative rounded overflow-hidden">
               <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                <img class="img-fluid" src="img/<%= jobs[i].image %>" alt="" />
               </div>
               <div class="team-text bg-light text-center p-4">
-                <h5>Aliksandir</h5>
-                <p class="text-primary">Bosh shifokor</p>
+                <h5><%= jobs[i].title %></h5>
+                <p class="text-primary"><%= jobs[i].job %></p>
                 <div class="team-social text-center">
                   <a class="btn btn-square" href=""
                     ><i class="fab fa-facebook-f"></i
@@ -440,9 +334,11 @@
               </div>
             </div>
           </div>
+          <%}%>
         </div>
       </div>
     </div>
+
     <!-- Team End -->
 
     <!-- Footer Start -->

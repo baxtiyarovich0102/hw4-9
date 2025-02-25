@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name":"Nimajon",
+        "job":"Qorovul",
+        "image":"testimonial-1.jpg",
+        "txt":"Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
+    },
+    {
+        "id":2,
+        "name":"Kim",
+        "job":"Uchuvchi",
+        "image":"testimonial-2.jpg",
+        "txt":"Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
+    },
+    {
+        "id":3,
+        "name":"Yupiter",
+        "job":"Kosmonavt",
+        "image":"testimonial-3.jpg",
+        "txt":"Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
+    }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Zilola",
+    "job": "Hamshira",
+    "image": "team-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Alisher",
+    "job": "Shifokor",
+    "image": "team-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Nargiza",
+    "job": "Hamshira",
+    "image": "team-3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Aliksandir",
+    "job": "Bosh shifokor",
+    "image": "team-4.jpg"
+  }
+]
