@@ -28,6 +28,7 @@ let renderTeam = (req, res, next) => {
   const team = TeamService.getAllTeam();
   res.render("team", {
     team,
+	
     title: "Xodimlar",
   });
 };
