@@ -1,26 +1,31 @@
+let {getData} = require('../service/data.service')
+
+let services = getData('service')
+let testimonials = getData('testimonial')
 let renderIndex = (req, res, next) => {
-    res.render("index", {
-      title: "Xususiy klinika",
-      join: "Rejalashtirish",
-    });
-  };
+	console.log(testimonials)
+	res.render("index", {
+		service:services,
+		tests: testimonials,
+		title: "Xususiy klinika",
+		join: "Rejalashtirish",
+	});
+};
 let renderFeature = (req, res, next) => {
-    res.render("feature", {
-      title: "Imkoniyat"
-    });
-  };
+  res.render("feature", {
+    title: "Imkoniyat",
+  });
+};
 let renderTeam = (req, res, next) => {
-    res.render("team", {
-      title: "Xodimlar"
-    });
-  };
+  res.render("team", {
+    title: "Xodimlar",
+  });
+};
 let renderAppointment = (req, res, next) => {
-    res.render("appointment", {
-      title: "Rejalashtirish"
-    });
-  };
-
-
+  res.render("appointment", {
+    title: "Rejalashtirish",
+  });
+};
 
 let renderAbout = (req, res, next) => {
   res.render("about", {
@@ -29,6 +34,8 @@ let renderAbout = (req, res, next) => {
 };
 let renderService = (req, res, next) => {
   res.render("service", {
+	service:services,
+	tests:testimonials,
     title: "Xizmatlarimiz",
   });
 };
@@ -39,6 +46,7 @@ let renderContact = (req, res, next) => {
 };
 let renderTetstimonial = (req, res, next) => {
   res.render("testimonial", {
+	tests: testimonials,
     title: "Sharh",
   });
 };
@@ -57,5 +65,5 @@ module.exports = {
   renderTeam,
   renderAppointment,
   renderTetstimonial,
-  renderError
+  renderError,
 };
