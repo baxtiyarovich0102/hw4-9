@@ -1,15 +1,18 @@
 let { getData } = require("../service/data.service");
 let AboutService = require("../service/about.service");
 let TeamService = require("../service/team.service");
+let IndexService = require("../service/index.service");
 
 let services = getData("service");
 let testimonials = getData("testimonial");
 
 let renderIndex = (req, res, next) => {
   const future = AboutService.getAllFuture();
+  const indexJobs = IndexService.getAllindexJobs();
   console.log(testimonials);
   res.render("index", {
     future,
+    indexJobs,
     service: services,
     tests: testimonials,
     title: "Xususiy klinika",
